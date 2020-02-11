@@ -1,0 +1,162 @@
+/* Créer une animation sur le background du body avec l'opacity de la photo */
+
+.brick1
+{
+    animation-delay: 1.5s;
+    animation: brickWall 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(.94,.13,.68,.98);
+}
+.brick2
+{
+    animation-delay: 1.5s;
+    animation: brickWall 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(.46,.3,.98,.65);
+}
+.brick3
+{
+    animation-delay: 1.5s;
+    animation: brickWall 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(.36,.55,.82,.66);
+}
+.brick4
+{
+    animation-delay: 1.5s;
+    animation: brickWall 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(.09,.63,.1,.95);
+}
+@keyframes brickWall {
+    from {
+        opacity: 1;
+    }
+    20% {
+        background-color: #B25252;
+    }
+    40% {
+        background-color: #AB4F4F;
+    }
+    75% {
+        background-color: #723636;
+    }
+    85% {
+        background-color: #612E2E;
+    }
+    95% {
+        background-color: #432020;
+    }
+    98% {
+        background-color: #2F1717;
+        opacity: 0.4;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.brick5
+{
+    animation-delay: 2s;
+    animation: brickWall2 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(.09,.63,.1,.95);
+}
+.brick6
+{
+    animation-delay: 1.5s;
+    animation: brickWall2 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(.36,.55,.82,.66);
+}
+.brick7
+{
+    animation-delay: 1.5s;
+    animation: brickWall2 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(.09,.63,.1,.95);
+}
+@keyframes brickWall2 {
+    from {
+        opacity: 1;
+    }
+    20% {
+        background-color: #C25B5B;
+    }
+    40% {
+        background-color: #C75D5D;
+    }
+    75% {
+        background-color: #C95E5E;
+    }
+    85% {
+        background-color: #CF6161;
+    }
+    95% {
+        background-color: #D86565;
+    }
+    98% {
+        background-color: #E06666;
+        opacity: 0.4;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.brick8
+{
+    animation-delay: 1s;
+    animation: brickWall3 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(.46,.3,.98,.65);
+}
+.brick9
+{
+    animation-delay: 1.5s;
+    animation: brickWall3 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(.36,.55,.82,.66);
+}
+.brick10
+{
+    animation-delay: 1s;
+    animation: brickWall3 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(.94,.13,.68,.98);
+}
+.brick11
+{
+    animation-delay: 3s;
+    animation: brickWall3 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(.09,.63,.1,.95);
+}
+@keyframes brickWall3 {
+    from {
+        opacity: 1;
+    }
+    20% {
+        background-color: #C95E5E;
+    }
+    40% {
+        background-color: #B25252;
+    }
+    75% {
+        background-color: #D86565;
+    }
+    85% {
+        background-color: #723636;
+    }
+    95% {
+        background-color: #E06666;
+    }
+    98% {
+        background-color: #432020;
+        opacity: 0.4;
+    }
+    to {
+        opacity: 0;
+    }
+}

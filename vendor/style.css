@@ -1,0 +1,55 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.row {
+  display: flex;
+  /* background: white; */
+}
+.row:first-child .brick {
+  margin-top: 4px;
+}
+.row:last-child .brick {
+  margin-bottom: 4px;
+}
+.row:nth-child(even) .brick:first-child {
+  display: none;
+}
+.row:nth-child(even) .brick:last-child {
+  margin-right: 2px;
+}
+.row:nth-child(even)::before,
+.row:nth-child(even)::after {
+  position: relative;
+  content: "";
+  background: #bd5858;
+  width: calc(7.5%);
+  height: 2.2vw;
+  border-radius: 2px;
+  margin: 2px;
+  box-shadow: 0 0 19px 1px #7d3232 inset;
+  animation: brickWall2 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(.09,.63,.1,.95);
+}
+.row:nth-child(even)::before {
+  margin-left: 4px;
+}
+.row:nth-child(even)::after {
+  margin-right: 4px;
+}
+.brick {
+  background: #bd5858;
+  width: 15%;
+  height: 2.2vw;
+  border-radius: 2px;
+  margin: 2px;
+  box-shadow: 0 0 19px 1px #7d3232 inset;
+}
+.brick:last-child {
+  margin-right: 4px;
+}
+.brick:first-child {
+  margin-left: 4px;
+}
